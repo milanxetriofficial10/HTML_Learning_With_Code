@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="border: 3px solid black; width: 400px; margin-left: 400px;">
+    <h1 style="text-align: center; color: blue;">Student Form Create Here</h1>
+    <form style="padding: 30px 40px;" action="index.php" method="POST">
+        <h3 style="text-align: center; text-decoration: double; color: chartreuse; border: 0px solid;">Personal Information</h3>
+
+
+        <label>Citizenship Number:</label><br>
+<input 
+  type="text" 
+  placeholder="12-34-56-78901"
+  pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{5}"
+  required
+>
+
+<br>
+
+<label>Full Name:</label> <br>
+
+        <input type="text" name="text" placeholder="Enter Full Name."><br>
+        <label>Email</label><br>
+        <input type="email" name="email" placeholder="Enter Eamil."> <br>
+        <label>Password</label><br>
+        <input type="password" name="pass" minlength="6
+        " placeholder="Enter password."> <br>
+        <label>Repeat Password</label><br>
+        <input type="password" name="pass" placeholder="Enter Repeat Password."> <br>
+        <br>
+
+        <label>Date Of Birth</label> <br>
+        <input type="date">
+        <br>
+        <br>
+        <label>Change On Gender</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Others
+
+        <br>
+        <h3>Education Details</h3> 
+        <label>Course: </label><br>
+        <select id="sub">
+            <option value="sub">BCA</option>
+            <option value="sub">CSIT Master</option>
+            <option value="sub">BBA</option>
+            <option value="sub">EA</option>
+            <option value="sub">BA</option>
+        </select> <br>
+        <label>Semester:</label> <br>
+        <input  type="number" min="1" max="8"> <br> <br>
+
+        <h3>Skills Add</h3>
+        <input type="checkbox">HTML
+        <input type="checkbox">CSS
+        <input type="checkbox">JavaScript
+        <input type="checkbox">PHP
+
+        <br>
+        <h4>Account Setup</h4>
+        <label>UserName</label><br>
+        <input type="username" name="user" placeholder="Enter The UserName"><br>
+        <label>Password</label><br>
+        <input type="password" name="pass" placeholder="Enter The Password"> <br>
+
+        <h3>Upload</h3>
+        <label>Profile Photo:</label>
+        <input type="file" accept="images/png, image/jpeg"> <br> <br>
+
+        <label for="comment">Massages Here:</label>
+        <textarea name="massage" id="massage" rows="3" cols="20"></textarea>
+
+        <button type="submit">Register</button>
+        <button type="submit">Reset</button>
+        
+    </form>
+</body>
+</html>
